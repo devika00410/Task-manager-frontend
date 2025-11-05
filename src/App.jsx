@@ -7,7 +7,7 @@ import Register from './Pages/Register';
 import Dashboard from './Pages/Dashboard';
 import './App.css';
 
-// Protected Route Component
+
 const ProtectedRoute = ({ children }) => {
   const { user, loading } = useAuth();
   
@@ -22,7 +22,7 @@ const ProtectedRoute = ({ children }) => {
   return user ? children : <Navigate to="/login" />;
 };
 
-// Public Route Component (redirect to dashboard if already logged in)
+
 const PublicRoute = ({ children }) => {
   const { user, loading } = useAuth();
   

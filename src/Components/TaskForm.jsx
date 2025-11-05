@@ -16,7 +16,7 @@ const TaskForm = ({ onSubmit, initialData = {} }) => {
     
     onSubmit(formData);
     
-    // Reset form only if we're creating a new task
+  //  Reset form
     if (!initialData?.title) {
       setFormData({ 
         title: '', 
