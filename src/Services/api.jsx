@@ -3,7 +3,7 @@ import axios from 'axios';
 
 const API = axios.create({
   baseURL: process.env.NODE_ENV === 'production' 
-    ? 'https://your-backend-url.onrender.com/api'
+    ? 'https://task-manager-gd2v.onrender.com'
     : 'http://localhost:8000/api',
 });
 
